@@ -102,5 +102,3 @@ You can download example how to use QiscusCore with advance usage from [QiscusCo
 ## Security Disclosure / Question / Other
 
 If you any security disclosure, question, or other, you can make [Ticket](https://support.qiscus.com/hc/en-us/requests/new)
-
-
