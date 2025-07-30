@@ -1,0 +1,1766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		208EBBDF28BC6116002DBF9D /* BundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208EBBDE28BC6116002DBF9D /* BundleExtention.swift */; };
+		20D4B75C2948616800E6D475 /* QiscusRealtime in Frameworks */ = {isa = PBXBuildFile; productRef = 20D4B75B2948616800E6D475 /* QiscusRealtime */; };
+		20E002962A13E47700B99D7B /* QiscusRealtime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002912A13E47600B99D7B /* QiscusRealtime.xcframework */; };
+		20E002972A13E47700B99D7B /* QiscusRealtime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002912A13E47600B99D7B /* QiscusRealtime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20E002982A13E47700B99D7B /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002922A13E47600B99D7B /* Starscream.xcframework */; };
+		20E002992A13E47700B99D7B /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002922A13E47600B99D7B /* Starscream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20E0029A2A13E47700B99D7B /* SwiftyJSON.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002932A13E47600B99D7B /* SwiftyJSON.xcframework */; };
+		20E0029B2A13E47700B99D7B /* SwiftyJSON.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002932A13E47600B99D7B /* SwiftyJSON.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20E0029C2A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002942A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework */; };
+		20E0029D2A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002942A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20E0029E2A13E47700B99D7B /* CocoaMQTT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002952A13E47700B99D7B /* CocoaMQTT.xcframework */; };
+		20E0029F2A13E47700B99D7B /* CocoaMQTT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E002952A13E47700B99D7B /* CocoaMQTT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		OBJ_162 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* GCDAsyncSocket.m */; };
+		OBJ_163 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* GCDAsyncUdpSocket.m */; };
+		OBJ_170 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* Package.swift */; };
+		OBJ_176 /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* CocoaMQTT.swift */; };
+		OBJ_177 /* CocoaMQTTDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* CocoaMQTTDeliver.swift */; };
+		OBJ_178 /* CocoaMQTTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* CocoaMQTTLogger.swift */; };
+		OBJ_179 /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* CocoaMQTTMessage.swift */; };
+		OBJ_180 /* CocoaMQTTReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* CocoaMQTTReader.swift */; };
+		OBJ_181 /* CocoaMQTTSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* CocoaMQTTSocket.swift */; };
+		OBJ_182 /* CocoaMQTTStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* CocoaMQTTStorage.swift */; };
+		OBJ_183 /* CocoaMQTTTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* CocoaMQTTTimer.swift */; };
+		OBJ_184 /* CocoaMQTTTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* CocoaMQTTTypes.swift */; };
+		OBJ_185 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Frame.swift */; };
+		OBJ_186 /* FrameConnAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* FrameConnAck.swift */; };
+		OBJ_187 /* FrameConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* FrameConnect.swift */; };
+		OBJ_188 /* FrameDisconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* FrameDisconnect.swift */; };
+		OBJ_189 /* FramePingReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* FramePingReq.swift */; };
+		OBJ_190 /* FramePingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* FramePingResp.swift */; };
+		OBJ_191 /* FramePubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* FramePubAck.swift */; };
+		OBJ_192 /* FramePubComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* FramePubComp.swift */; };
+		OBJ_193 /* FramePubRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* FramePubRec.swift */; };
+		OBJ_194 /* FramePubRel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* FramePubRel.swift */; };
+		OBJ_195 /* FramePublish.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* FramePublish.swift */; };
+		OBJ_196 /* FrameSubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* FrameSubAck.swift */; };
+		OBJ_197 /* FrameSubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* FrameSubscribe.swift */; };
+		OBJ_198 /* FrameUnsubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* FrameUnsubAck.swift */; };
+		OBJ_199 /* FrameUnsubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* FrameUnsubscribe.swift */; };
+		OBJ_201 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cocoaasyncsocket::CocoaAsyncSocket::Product" /* CocoaAsyncSocket.framework */; };
+		OBJ_208 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* Package.swift */; };
+		OBJ_214 /* CommentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CommentStorage.swift */; };
+		OBJ_215 /* MemberDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MemberDatabase.swift */; };
+		OBJ_216 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ActiveRecord.swift */; };
+		OBJ_217 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Comment+CoreDataClass.swift */; };
+		OBJ_218 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Comment+CoreDataProperties.swift */; };
+		OBJ_219 /* Member+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Member+CoreDataClass.swift */; };
+		OBJ_220 /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Member+CoreDataProperties.swift */; };
+		OBJ_221 /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Room+CoreDataClass.swift */; };
+		OBJ_222 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Room+CoreDataProperties.swift */; };
+		OBJ_223 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PersistentStore.swift */; };
+		OBJ_224 /* QiscusDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* QiscusDatabase.swift */; };
+		OBJ_225 /* QiscusDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* QiscusDatabaseManager.swift */; };
+		OBJ_226 /* RoomStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* RoomStorage.swift */; };
+		OBJ_227 /* UIDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* UIDeviceInfo.swift */; };
+		OBJ_228 /* AppConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* AppConfigModel.swift */; };
+		OBJ_229 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ApiResponse.swift */; };
+		OBJ_230 /* CommentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* CommentInfo.swift */; };
+		OBJ_231 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CommentModel.swift */; };
+		OBJ_232 /* QiscusConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* QiscusConfig.swift */; };
+		OBJ_233 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* FileModel.swift */; };
+		OBJ_234 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* GenericModel.swift */; };
+		OBJ_235 /* LBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* LBModel.swift */; };
+		OBJ_236 /* NonceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* NonceModel.swift */; };
+		OBJ_237 /* QError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* QError.swift */; };
+		OBJ_238 /* QUserPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* QUserPresence.swift */; };
+		OBJ_239 /* QiscusChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* QiscusChannels.swift */; };
+		OBJ_240 /* RoomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* RoomEvent.swift */; };
+		OBJ_241 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* RoomModel.swift */; };
+		OBJ_242 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* UserModel.swift */; };
+		OBJ_243 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* ParameterEncoder.swift */; };
+		OBJ_244 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ParameterEncoding.swift */; };
+		OBJ_245 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* NetworkManager.swift */; };
+		OBJ_246 /* NetworkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* NetworkMessage.swift */; };
+		OBJ_247 /* NetworkRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* NetworkRoom.swift */; };
+		OBJ_248 /* NetworkUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* NetworkUpload.swift */; };
+		OBJ_249 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* DownloadService.swift */; };
+		OBJ_250 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Endpoint.swift */; };
+		OBJ_251 /* EndpointComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* EndpointComment.swift */; };
+		OBJ_252 /* EndpointRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* EndpointRoom.swift */; };
+		OBJ_253 /* EndpointUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* EndpointUser.swift */; };
+		OBJ_254 /* HTTPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* HTTPUtil.swift */; };
+		OBJ_255 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Router.swift */; };
+		OBJ_256 /* QiscusConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* QiscusConnectionDelegate.swift */; };
+		OBJ_257 /* QiscusComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* QiscusComment.swift */; };
+		OBJ_258 /* QiscusCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* QiscusCore.swift */; };
+		OBJ_259 /* QiscusEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* QiscusEventManager.swift */; };
+		OBJ_260 /* QiscusRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* QiscusRoom.swift */; };
+		OBJ_261 /* QiscusWorkerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* QiscusWorkerManager.swift */; };
+		OBJ_262 /* RealtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* RealtimeManager.swift */; };
+		OBJ_263 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* ConfigManager.swift */; };
+		OBJ_264 /* QiscusFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* QiscusFileManager.swift */; };
+		OBJ_265 /* QiscusStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* QiscusStorage.swift */; };
+		OBJ_266 /* Data+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Data+Json.swift */; };
+		OBJ_267 /* QiscusHeartBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* QiscusHeartBeat.swift */; };
+		OBJ_268 /* QiscusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* QiscusLogger.swift */; };
+		OBJ_269 /* QiscusReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* QiscusReachability.swift */; };
+		OBJ_270 /* QiscusSyncEventInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* QiscusSyncEventInterval.swift */; };
+		OBJ_271 /* QiscusThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* QiscusThread.swift */; };
+		OBJ_272 /* QiscusWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* QiscusWorker.swift */; };
+		OBJ_289 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_294 /* QDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* QDate.swift */; };
+		OBJ_295 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Model.swift */; };
+		OBJ_296 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Protocol.swift */; };
+		OBJ_297 /* QRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* QRLogger.swift */; };
+		OBJ_298 /* QiscusRealtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* QiscusRealtime.swift */; };
+		OBJ_299 /* QiscusRealtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* QiscusRealtimeManager.swift */; };
+		OBJ_300 /* RealtimeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* RealtimeConfig.swift */; };
+		OBJ_301 /* MqttClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* MqttClient.swift */; };
+		OBJ_303 /* CocoaMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cocoamqtt::CocoaMQTT::Product" /* CocoaMQTT.framework */; };
+		OBJ_304 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cocoaasyncsocket::CocoaAsyncSocket::Product" /* CocoaAsyncSocket.framework */; };
+		OBJ_312 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Package.swift */; };
+		OBJ_317 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* SwiftyJSON.swift */; };
+		OBJ_324 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		208EBBD128BC5FC9002DBF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cocoamqtt::CocoaMQTT";
+			remoteInfo = CocoaMQTT;
+		};
+		208EBBD228BC5FC9002DBF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cocoaasyncsocket::CocoaAsyncSocket";
+			remoteInfo = CocoaAsyncSocket;
+		};
+		208EBBD328BC5FC9002DBF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cocoaasyncsocket::CocoaAsyncSocket";
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20E002A02A13E47700B99D7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20E0029B2A13E47700B99D7B /* SwiftyJSON.xcframework in Embed Frameworks */,
+				20E0029F2A13E47700B99D7B /* CocoaMQTT.xcframework in Embed Frameworks */,
+				20E002992A13E47700B99D7B /* Starscream.xcframework in Embed Frameworks */,
+				20E0029D2A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework in Embed Frameworks */,
+				20E002972A13E47700B99D7B /* QiscusRealtime.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		208EBBDE28BC6116002DBF9D /* BundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtention.swift; sourceTree = "<group>"; };
+		20E002912A13E47600B99D7B /* QiscusRealtime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = QiscusRealtime.xcframework; path = Carthage/Build/QiscusRealtime.xcframework; sourceTree = "<group>"; };
+		20E002922A13E47600B99D7B /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
+		20E002932A13E47600B99D7B /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = "<group>"; };
+		20E002942A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MqttCocoaAsyncSocket.xcframework; path = Carthage/Build/MqttCocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
+		20E002952A13E47700B99D7B /* CocoaMQTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaMQTT.xcframework; path = Carthage/Build/CocoaMQTT.xcframework; sourceTree = "<group>"; };
+		20E4BA322BBA859C009C437A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		OBJ_10 /* CommentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentStorage.swift; sourceTree = "<group>"; };
+		OBJ_101 /* MqttClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttClient.swift; sourceTree = "<group>"; };
+		OBJ_105 /* CocoaMQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTT.swift; sourceTree = "<group>"; };
+		OBJ_106 /* CocoaMQTTDeliver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTDeliver.swift; sourceTree = "<group>"; };
+		OBJ_107 /* CocoaMQTTLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTLogger.swift; sourceTree = "<group>"; };
+		OBJ_108 /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTMessage.swift; sourceTree = "<group>"; };
+		OBJ_109 /* CocoaMQTTReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTReader.swift; sourceTree = "<group>"; };
+		OBJ_11 /* MemberDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDatabase.swift; sourceTree = "<group>"; };
+		OBJ_110 /* CocoaMQTTSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTSocket.swift; sourceTree = "<group>"; };
+		OBJ_111 /* CocoaMQTTStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTStorage.swift; sourceTree = "<group>"; };
+		OBJ_112 /* CocoaMQTTTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTTimer.swift; sourceTree = "<group>"; };
+		OBJ_113 /* CocoaMQTTTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMQTTTypes.swift; sourceTree = "<group>"; };
+		OBJ_114 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		OBJ_115 /* FrameConnAck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameConnAck.swift; sourceTree = "<group>"; };
+		OBJ_116 /* FrameConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameConnect.swift; sourceTree = "<group>"; };
+		OBJ_117 /* FrameDisconnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDisconnect.swift; sourceTree = "<group>"; };
+		OBJ_118 /* FramePingReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePingReq.swift; sourceTree = "<group>"; };
+		OBJ_119 /* FramePingResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePingResp.swift; sourceTree = "<group>"; };
+		OBJ_120 /* FramePubAck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePubAck.swift; sourceTree = "<group>"; };
+		OBJ_121 /* FramePubComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePubComp.swift; sourceTree = "<group>"; };
+		OBJ_122 /* FramePubRec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePubRec.swift; sourceTree = "<group>"; };
+		OBJ_123 /* FramePubRel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePubRel.swift; sourceTree = "<group>"; };
+		OBJ_124 /* FramePublish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePublish.swift; sourceTree = "<group>"; };
+		OBJ_125 /* FrameSubAck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSubAck.swift; sourceTree = "<group>"; };
+		OBJ_126 /* FrameSubscribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSubscribe.swift; sourceTree = "<group>"; };
+		OBJ_127 /* FrameUnsubAck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameUnsubAck.swift; sourceTree = "<group>"; };
+		OBJ_128 /* FrameUnsubscribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameUnsubscribe.swift; sourceTree = "<group>"; };
+		OBJ_129 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/ariefnurputranto/Documents/IOS/SDKV2/QiscusCore/.build/checkouts/CocoaMQTT/Package.swift; sourceTree = "<group>"; };
+		OBJ_131 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/ariefnurputranto/Documents/IOS/SDKV2/QiscusCore/.build/checkouts/CocoaAsyncSocket/Package.swift; sourceTree = "<group>"; };
+		OBJ_132 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		OBJ_133 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		OBJ_134 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		OBJ_135 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		OBJ_136 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/ariefnurputranto/Documents/IOS/SDKV2/QiscusCore/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap; sourceTree = "<group>"; };
+		OBJ_14 /* ActiveRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
+		OBJ_143 /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = SOURCE_ROOT; };
+		OBJ_144 /* QiscusCoreTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QiscusCoreTests; sourceTree = SOURCE_ROOT; };
+		OBJ_145 /* QiscusDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QiscusDatabase.framework; sourceTree = SOURCE_ROOT; };
+		OBJ_146 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		OBJ_147 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
+		OBJ_148 /* QiscusCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QiscusCore; sourceTree = SOURCE_ROOT; };
+		OBJ_149 /* QiscusDatabase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QiscusDatabase; sourceTree = SOURCE_ROOT; };
+		OBJ_15 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		OBJ_150 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		OBJ_151 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_152 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		OBJ_153 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_154 /* QiscusCore.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = QiscusCore.podspec; sourceTree = "<group>"; };
+		OBJ_155 /* firebase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firebase.json; sourceTree = "<group>"; };
+		OBJ_156 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		OBJ_16 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* Member+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataClass.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* PersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		OBJ_22 /* QiscusDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusDatabase.swift; sourceTree = "<group>"; };
+		OBJ_23 /* QiscusDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusDatabaseManager.swift; sourceTree = "<group>"; };
+		OBJ_24 /* RoomStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStorage.swift; sourceTree = "<group>"; };
+		OBJ_26 /* UIDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceInfo.swift; sourceTree = "<group>"; };
+		OBJ_28 /* AppConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigModel.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		OBJ_31 /* CommentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInfo.swift; sourceTree = "<group>"; };
+		OBJ_32 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		OBJ_34 /* QiscusConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusConfig.swift; sourceTree = "<group>"; };
+		OBJ_35 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		OBJ_36 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		OBJ_37 /* LBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBModel.swift; sourceTree = "<group>"; };
+		OBJ_38 /* NonceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonceModel.swift; sourceTree = "<group>"; };
+		OBJ_39 /* QError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QError.swift; sourceTree = "<group>"; };
+		OBJ_40 /* QUserPresence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUserPresence.swift; sourceTree = "<group>"; };
+		OBJ_41 /* QiscusChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusChannels.swift; sourceTree = "<group>"; };
+		OBJ_42 /* RoomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEvent.swift; sourceTree = "<group>"; };
+		OBJ_43 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		OBJ_44 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		OBJ_47 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		OBJ_48 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_49 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		OBJ_50 /* NetworkMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMessage.swift; sourceTree = "<group>"; };
+		OBJ_51 /* NetworkRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoom.swift; sourceTree = "<group>"; };
+		OBJ_52 /* NetworkUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUpload.swift; sourceTree = "<group>"; };
+		OBJ_54 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		OBJ_57 /* EndpointComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointComment.swift; sourceTree = "<group>"; };
+		OBJ_58 /* EndpointRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointRoom.swift; sourceTree = "<group>"; };
+		OBJ_59 /* EndpointUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointUser.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* HTTPUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPUtil.swift; sourceTree = "<group>"; };
+		OBJ_61 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		OBJ_63 /* QiscusConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusConnectionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_64 /* QiscusComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusComment.swift; sourceTree = "<group>"; };
+		OBJ_65 /* QiscusCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusCore.swift; sourceTree = "<group>"; };
+		OBJ_66 /* QiscusEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusEventManager.swift; sourceTree = "<group>"; };
+		OBJ_67 /* QiscusRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusRoom.swift; sourceTree = "<group>"; };
+		OBJ_68 /* QiscusWorkerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusWorkerManager.swift; sourceTree = "<group>"; };
+		OBJ_70 /* RealtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeManager.swift; sourceTree = "<group>"; };
+		OBJ_72 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		OBJ_73 /* QiscusFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusFileManager.swift; sourceTree = "<group>"; };
+		OBJ_74 /* QiscusStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusStorage.swift; sourceTree = "<group>"; };
+		OBJ_76 /* Data+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Json.swift"; sourceTree = "<group>"; };
+		OBJ_77 /* QiscusHeartBeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusHeartBeat.swift; sourceTree = "<group>"; };
+		OBJ_78 /* QiscusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusLogger.swift; sourceTree = "<group>"; };
+		OBJ_79 /* QiscusReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusReachability.swift; sourceTree = "<group>"; };
+		OBJ_80 /* QiscusSyncEventInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusSyncEventInterval.swift; sourceTree = "<group>"; };
+		OBJ_81 /* QiscusThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusThread.swift; sourceTree = "<group>"; };
+		OBJ_82 /* QiscusWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusWorker.swift; sourceTree = "<group>"; };
+		OBJ_87 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		OBJ_88 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/ariefnurputranto/Documents/IOS/SDKV2/QiscusCore/.build/checkouts/SwiftyJSON/Package.swift; sourceTree = "<group>"; };
+		OBJ_90 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ariefnurputranto/Documents/IOS/SDKV2/QiscusCore/.build/checkouts/QiscusRealtime-iOS/Package.swift"; sourceTree = "<group>"; };
+		OBJ_93 /* QDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QDate.swift; sourceTree = "<group>"; };
+		OBJ_94 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		OBJ_95 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		OBJ_96 /* QRLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLogger.swift; sourceTree = "<group>"; };
+		OBJ_97 /* QiscusRealtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusRealtime.swift; sourceTree = "<group>"; };
+		OBJ_98 /* QiscusRealtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiscusRealtimeManager.swift; sourceTree = "<group>"; };
+		OBJ_99 /* RealtimeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeConfig.swift; sourceTree = "<group>"; };
+		"cocoaasyncsocket::CocoaAsyncSocket::Product" /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"cocoamqtt::CocoaMQTT::Product" /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"qiscuscore::QiscusCore::Product" /* QiscusCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QiscusCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"qiscusrealtime-ios::QiscusRealtime::Product" /* QiscusRealtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QiscusRealtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swiftyjson::SwiftyJSON::Product" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_201 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				20E0029A2A13E47700B99D7B /* SwiftyJSON.xcframework in Frameworks */,
+				20E0029E2A13E47700B99D7B /* CocoaMQTT.xcframework in Frameworks */,
+				20E002982A13E47700B99D7B /* Starscream.xcframework in Frameworks */,
+				20E0029C2A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework in Frameworks */,
+				20E002962A13E47700B99D7B /* QiscusRealtime.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_303 /* CocoaMQTT.framework in Frameworks */,
+				20D4B75C2948616800E6D475 /* QiscusRealtime in Frameworks */,
+				OBJ_304 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20E002902A13E47600B99D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E002952A13E47700B99D7B /* CocoaMQTT.xcframework */,
+				20E002942A13E47700B99D7B /* MqttCocoaAsyncSocket.xcframework */,
+				20E002912A13E47600B99D7B /* QiscusRealtime.xcframework */,
+				20E002922A13E47600B99D7B /* Starscream.xcframework */,
+				20E002932A13E47600B99D7B /* SwiftyJSON.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_100 /* mqtt */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_101 /* MqttClient.swift */,
+			);
+			path = mqtt;
+			sourceTree = "<group>";
+		};
+		OBJ_102 /* CocoaMQTT 1.3.0-rc.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_103 /* CocoaMQTT */,
+				OBJ_104 /* CocoaMQTTWebSocket */,
+				OBJ_129 /* Package.swift */,
+			);
+			name = "CocoaMQTT 1.3.0-rc.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_103 /* CocoaMQTT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CocoaMQTT;
+			path = .build/checkouts/CocoaMQTT/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_104 /* CocoaMQTTWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_105 /* CocoaMQTT.swift */,
+				OBJ_106 /* CocoaMQTTDeliver.swift */,
+				OBJ_107 /* CocoaMQTTLogger.swift */,
+				OBJ_108 /* CocoaMQTTMessage.swift */,
+				OBJ_109 /* CocoaMQTTReader.swift */,
+				OBJ_110 /* CocoaMQTTSocket.swift */,
+				OBJ_111 /* CocoaMQTTStorage.swift */,
+				OBJ_112 /* CocoaMQTTTimer.swift */,
+				OBJ_113 /* CocoaMQTTTypes.swift */,
+				OBJ_114 /* Frame.swift */,
+				OBJ_115 /* FrameConnAck.swift */,
+				OBJ_116 /* FrameConnect.swift */,
+				OBJ_117 /* FrameDisconnect.swift */,
+				OBJ_118 /* FramePingReq.swift */,
+				OBJ_119 /* FramePingResp.swift */,
+				OBJ_120 /* FramePubAck.swift */,
+				OBJ_121 /* FramePubComp.swift */,
+				OBJ_122 /* FramePubRec.swift */,
+				OBJ_123 /* FramePubRel.swift */,
+				OBJ_124 /* FramePublish.swift */,
+				OBJ_125 /* FrameSubAck.swift */,
+				OBJ_126 /* FrameSubscribe.swift */,
+				OBJ_127 /* FrameUnsubAck.swift */,
+				OBJ_128 /* FrameUnsubscribe.swift */,
+			);
+			name = CocoaMQTTWebSocket;
+			path = .build/checkouts/CocoaMQTT/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_12 /* QiscusDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Model */,
+				OBJ_21 /* PersistentStore.swift */,
+				OBJ_22 /* QiscusDatabase.swift */,
+			);
+			path = QiscusDatabase;
+			sourceTree = "<group>";
+		};
+		OBJ_13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* ActiveRecord.swift */,
+				OBJ_15 /* Comment+CoreDataClass.swift */,
+				OBJ_16 /* Comment+CoreDataProperties.swift */,
+				OBJ_17 /* Member+CoreDataClass.swift */,
+				OBJ_18 /* Member+CoreDataProperties.swift */,
+				OBJ_19 /* Room+CoreDataClass.swift */,
+				OBJ_20 /* Room+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		OBJ_130 /* CocoaAsyncSocket 7.6.5 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_131 /* Package.swift */,
+				OBJ_132 /* GCDAsyncSocket.m */,
+				OBJ_133 /* GCDAsyncUdpSocket.m */,
+				OBJ_134 /* GCDAsyncUdpSocket.h */,
+				OBJ_135 /* GCDAsyncSocket.h */,
+				OBJ_136 /* module.modulemap */,
+			);
+			name = "CocoaAsyncSocket 7.6.5";
+			path = .build/checkouts/CocoaAsyncSocket/Source/GCD;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"cocoaasyncsocket::CocoaAsyncSocket::Product" /* CocoaAsyncSocket.framework */,
+				"cocoamqtt::CocoaMQTT::Product" /* CocoaMQTT.framework */,
+				"qiscuscore::QiscusCore::Product" /* QiscusCore.framework */,
+				"qiscusrealtime-ios::QiscusRealtime::Product" /* QiscusRealtime.framework */,
+				"swiftyjson::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_25 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* UIDeviceInfo.swift */,
+				208EBBDE28BC6116002DBF9D /* BundleExtention.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* AppConfigModel.swift */,
+				OBJ_29 /* Base */,
+				OBJ_31 /* CommentInfo.swift */,
+				OBJ_32 /* CommentModel.swift */,
+				OBJ_33 /* Config */,
+				OBJ_35 /* FileModel.swift */,
+				OBJ_36 /* GenericModel.swift */,
+				OBJ_37 /* LBModel.swift */,
+				OBJ_38 /* NonceModel.swift */,
+				OBJ_39 /* QError.swift */,
+				OBJ_40 /* QUserPresence.swift */,
+				OBJ_41 /* QiscusChannels.swift */,
+				OBJ_42 /* RoomEvent.swift */,
+				OBJ_43 /* RoomModel.swift */,
+				OBJ_44 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* ApiResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		OBJ_33 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* QiscusConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		OBJ_45 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_46 /* Encoding */,
+				OBJ_49 /* NetworkManager.swift */,
+				OBJ_50 /* NetworkMessage.swift */,
+				OBJ_51 /* NetworkRoom.swift */,
+				OBJ_52 /* NetworkUpload.swift */,
+				OBJ_53 /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		OBJ_46 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* ParameterEncoder.swift */,
+				OBJ_48 /* ParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				20E4BA322BBA859C009C437A /* PrivacyInfo.xcprivacy */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_83 /* Tests */,
+				OBJ_84 /* Dependencies */,
+				OBJ_137 /* Products */,
+				OBJ_143 /* screenshots */,
+				OBJ_144 /* QiscusCoreTests */,
+				OBJ_145 /* QiscusDatabase.framework */,
+				OBJ_146 /* Pods */,
+				OBJ_147 /* Examples */,
+				OBJ_148 /* QiscusCore */,
+				OBJ_149 /* QiscusDatabase */,
+				OBJ_150 /* Cartfile.resolved */,
+				OBJ_151 /* LICENSE */,
+				OBJ_152 /* Cartfile */,
+				OBJ_153 /* README.md */,
+				OBJ_154 /* QiscusCore.podspec */,
+				OBJ_155 /* firebase.json */,
+				OBJ_156 /* Podfile */,
+				20E002902A13E47600B99D7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* DownloadService.swift */,
+				OBJ_55 /* Endpoint.swift */,
+				OBJ_56 /* Endpoint */,
+				OBJ_60 /* HTTPUtil.swift */,
+				OBJ_61 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* EndpointComment.swift */,
+				OBJ_58 /* EndpointRoom.swift */,
+				OBJ_59 /* EndpointUser.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* QiscusConnectionDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		OBJ_69 /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_70 /* RealtimeManager.swift */,
+			);
+			path = Realtime;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* QiscusCore */,
+			);
+			name = Sources;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_71 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_72 /* ConfigManager.swift */,
+				OBJ_73 /* QiscusFileManager.swift */,
+				OBJ_74 /* QiscusStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		OBJ_75 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_76 /* Data+Json.swift */,
+				OBJ_77 /* QiscusHeartBeat.swift */,
+				OBJ_78 /* QiscusLogger.swift */,
+				OBJ_79 /* QiscusReachability.swift */,
+				OBJ_80 /* QiscusSyncEventInterval.swift */,
+				OBJ_81 /* QiscusThread.swift */,
+				OBJ_82 /* QiscusWorker.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* QiscusCore */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Database */,
+				OBJ_25 /* Extension */,
+				OBJ_27 /* Model */,
+				OBJ_45 /* Network */,
+				OBJ_62 /* Protocol */,
+				OBJ_64 /* QiscusComment.swift */,
+				OBJ_65 /* QiscusCore.swift */,
+				OBJ_66 /* QiscusEventManager.swift */,
+				OBJ_67 /* QiscusRoom.swift */,
+				OBJ_68 /* QiscusWorkerManager.swift */,
+				OBJ_69 /* Realtime */,
+				OBJ_71 /* Storage */,
+				OBJ_75 /* Util */,
+			);
+			path = QiscusCore;
+			sourceTree = "<group>";
+		};
+		OBJ_83 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_84 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_85 /* SwiftyJSON 5.0.1 */,
+				OBJ_89 /* QiscusRealtime-iOS 1.5.0-beta.3 */,
+				OBJ_102 /* CocoaMQTT 1.3.0-rc.2 */,
+				OBJ_130 /* CocoaAsyncSocket 7.6.5 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_85 /* SwiftyJSON 5.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* SwiftyJSON */,
+				OBJ_88 /* Package.swift */,
+			);
+			name = "SwiftyJSON 5.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_86 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			path = .build/checkouts/SwiftyJSON/Source/SwiftyJSON;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_89 /* QiscusRealtime-iOS 1.5.0-beta.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_90 /* Package.swift */,
+				OBJ_91 /* QiscusRealtime */,
+			);
+			name = "QiscusRealtime-iOS 1.5.0-beta.3";
+			path = ".build/checkouts/QiscusRealtime-iOS/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* CommentStorage.swift */,
+				OBJ_11 /* MemberDatabase.swift */,
+				OBJ_12 /* QiscusDatabase */,
+				OBJ_23 /* QiscusDatabaseManager.swift */,
+				OBJ_24 /* RoomStorage.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		OBJ_91 /* QiscusRealtime */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_92 /* Extension */,
+				OBJ_94 /* Model.swift */,
+				OBJ_95 /* Protocol.swift */,
+				OBJ_96 /* QRLogger.swift */,
+				OBJ_97 /* QiscusRealtime.swift */,
+				OBJ_98 /* QiscusRealtimeManager.swift */,
+				OBJ_99 /* RealtimeConfig.swift */,
+				OBJ_100 /* mqtt */,
+			);
+			path = QiscusRealtime;
+			sourceTree = "<group>";
+		};
+		OBJ_92 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_93 /* QDate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"cocoaasyncsocket::CocoaAsyncSocket" /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_158 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				OBJ_161 /* Sources */,
+				OBJ_164 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = "cocoaasyncsocket::CocoaAsyncSocket::Product" /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cocoaasyncsocket::SwiftPMPackageDescription" /* CocoaAsyncSocketPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_166 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocketPackageDescription" */;
+			buildPhases = (
+				OBJ_169 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocketPackageDescription;
+			productName = CocoaAsyncSocketPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"cocoamqtt::CocoaMQTT" /* CocoaMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_172 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */;
+			buildPhases = (
+				OBJ_175 /* Sources */,
+				OBJ_200 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_202 /* PBXTargetDependency */,
+			);
+			name = CocoaMQTT;
+			productName = CocoaMQTT;
+			productReference = "cocoamqtt::CocoaMQTT::Product" /* CocoaMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cocoamqtt::SwiftPMPackageDescription" /* CocoaMQTTPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_204 /* Build configuration list for PBXNativeTarget "CocoaMQTTPackageDescription" */;
+			buildPhases = (
+				OBJ_207 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaMQTTPackageDescription;
+			productName = CocoaMQTTPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"qiscuscore::QiscusCore" /* QiscusCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_210 /* Build configuration list for PBXNativeTarget "QiscusCore" */;
+			buildPhases = (
+				OBJ_213 /* Sources */,
+				OBJ_273 /* Frameworks */,
+				20E002A02A13E47700B99D7B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiscusCore;
+			packageProductDependencies = (
+			);
+			productName = QiscusCore;
+			productReference = "qiscuscore::QiscusCore::Product" /* QiscusCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"qiscuscore::SwiftPMPackageDescription" /* QiscusCorePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_285 /* Build configuration list for PBXNativeTarget "QiscusCorePackageDescription" */;
+			buildPhases = (
+				OBJ_288 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiscusCorePackageDescription;
+			productName = QiscusCorePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"qiscusrealtime-ios::QiscusRealtime" /* QiscusRealtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_290 /* Build configuration list for PBXNativeTarget "QiscusRealtime" */;
+			buildPhases = (
+				OBJ_293 /* Sources */,
+				OBJ_302 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_305 /* PBXTargetDependency */,
+				OBJ_306 /* PBXTargetDependency */,
+			);
+			name = QiscusRealtime;
+			packageProductDependencies = (
+				20D4B75B2948616800E6D475 /* QiscusRealtime */,
+			);
+			productName = QiscusRealtime;
+			productReference = "qiscusrealtime-ios::QiscusRealtime::Product" /* QiscusRealtime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"qiscusrealtime-ios::SwiftPMPackageDescription" /* QiscusRealtime-iOSPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_308 /* Build configuration list for PBXNativeTarget "QiscusRealtime-iOSPackageDescription" */;
+			buildPhases = (
+				OBJ_311 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QiscusRealtime-iOSPackageDescription";
+			productName = "QiscusRealtime-iOSPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftyjson::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_320 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
+			buildPhases = (
+				OBJ_323 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSONPackageDescription;
+			productName = SwiftyJSONPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftyjson::SwiftyJSON" /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_313 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				OBJ_316 /* Sources */,
+				OBJ_318 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = "swiftyjson::SwiftyJSON::Product" /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "QiscusCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			packageReferences = (
+				208EBBD628BC6009002DBF9D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				20D4B75A2948616800E6D475 /* XCRemoteSwiftPackageReference "QiscusRealtime-iOS" */,
+			);
+			productRefGroup = OBJ_137 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"cocoaasyncsocket::CocoaAsyncSocket" /* CocoaAsyncSocket */,
+				"cocoaasyncsocket::SwiftPMPackageDescription" /* CocoaAsyncSocketPackageDescription */,
+				"cocoamqtt::CocoaMQTT" /* CocoaMQTT */,
+				"cocoamqtt::SwiftPMPackageDescription" /* CocoaMQTTPackageDescription */,
+				"qiscuscore::QiscusCore" /* QiscusCore */,
+				"qiscuscore::SwiftPMPackageDescription" /* QiscusCorePackageDescription */,
+				"qiscusrealtime-ios::QiscusRealtime" /* QiscusRealtime */,
+				"qiscusrealtime-ios::SwiftPMPackageDescription" /* QiscusRealtime-iOSPackageDescription */,
+				"swiftyjson::SwiftyJSON" /* SwiftyJSON */,
+				"swiftyjson::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_162 /* GCDAsyncSocket.m in Sources */,
+				OBJ_163 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_170 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_176 /* CocoaMQTT.swift in Sources */,
+				OBJ_177 /* CocoaMQTTDeliver.swift in Sources */,
+				OBJ_178 /* CocoaMQTTLogger.swift in Sources */,
+				OBJ_179 /* CocoaMQTTMessage.swift in Sources */,
+				OBJ_180 /* CocoaMQTTReader.swift in Sources */,
+				OBJ_181 /* CocoaMQTTSocket.swift in Sources */,
+				OBJ_182 /* CocoaMQTTStorage.swift in Sources */,
+				OBJ_183 /* CocoaMQTTTimer.swift in Sources */,
+				OBJ_184 /* CocoaMQTTTypes.swift in Sources */,
+				OBJ_185 /* Frame.swift in Sources */,
+				OBJ_186 /* FrameConnAck.swift in Sources */,
+				OBJ_187 /* FrameConnect.swift in Sources */,
+				OBJ_188 /* FrameDisconnect.swift in Sources */,
+				OBJ_189 /* FramePingReq.swift in Sources */,
+				OBJ_190 /* FramePingResp.swift in Sources */,
+				OBJ_191 /* FramePubAck.swift in Sources */,
+				OBJ_192 /* FramePubComp.swift in Sources */,
+				OBJ_193 /* FramePubRec.swift in Sources */,
+				OBJ_194 /* FramePubRel.swift in Sources */,
+				OBJ_195 /* FramePublish.swift in Sources */,
+				OBJ_196 /* FrameSubAck.swift in Sources */,
+				OBJ_197 /* FrameSubscribe.swift in Sources */,
+				OBJ_198 /* FrameUnsubAck.swift in Sources */,
+				OBJ_199 /* FrameUnsubscribe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_208 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_214 /* CommentStorage.swift in Sources */,
+				OBJ_215 /* MemberDatabase.swift in Sources */,
+				OBJ_216 /* ActiveRecord.swift in Sources */,
+				OBJ_217 /* Comment+CoreDataClass.swift in Sources */,
+				OBJ_218 /* Comment+CoreDataProperties.swift in Sources */,
+				OBJ_219 /* Member+CoreDataClass.swift in Sources */,
+				OBJ_220 /* Member+CoreDataProperties.swift in Sources */,
+				OBJ_221 /* Room+CoreDataClass.swift in Sources */,
+				OBJ_222 /* Room+CoreDataProperties.swift in Sources */,
+				OBJ_223 /* PersistentStore.swift in Sources */,
+				OBJ_224 /* QiscusDatabase.swift in Sources */,
+				OBJ_225 /* QiscusDatabaseManager.swift in Sources */,
+				OBJ_226 /* RoomStorage.swift in Sources */,
+				OBJ_227 /* UIDeviceInfo.swift in Sources */,
+				OBJ_228 /* AppConfigModel.swift in Sources */,
+				OBJ_229 /* ApiResponse.swift in Sources */,
+				OBJ_230 /* CommentInfo.swift in Sources */,
+				OBJ_231 /* CommentModel.swift in Sources */,
+				OBJ_232 /* QiscusConfig.swift in Sources */,
+				OBJ_233 /* FileModel.swift in Sources */,
+				OBJ_234 /* GenericModel.swift in Sources */,
+				OBJ_235 /* LBModel.swift in Sources */,
+				OBJ_236 /* NonceModel.swift in Sources */,
+				OBJ_237 /* QError.swift in Sources */,
+				OBJ_238 /* QUserPresence.swift in Sources */,
+				OBJ_239 /* QiscusChannels.swift in Sources */,
+				OBJ_240 /* RoomEvent.swift in Sources */,
+				OBJ_241 /* RoomModel.swift in Sources */,
+				OBJ_242 /* UserModel.swift in Sources */,
+				OBJ_243 /* ParameterEncoder.swift in Sources */,
+				OBJ_244 /* ParameterEncoding.swift in Sources */,
+				OBJ_245 /* NetworkManager.swift in Sources */,
+				OBJ_246 /* NetworkMessage.swift in Sources */,
+				OBJ_247 /* NetworkRoom.swift in Sources */,
+				OBJ_248 /* NetworkUpload.swift in Sources */,
+				OBJ_249 /* DownloadService.swift in Sources */,
+				OBJ_250 /* Endpoint.swift in Sources */,
+				OBJ_251 /* EndpointComment.swift in Sources */,
+				OBJ_252 /* EndpointRoom.swift in Sources */,
+				OBJ_253 /* EndpointUser.swift in Sources */,
+				208EBBDF28BC6116002DBF9D /* BundleExtention.swift in Sources */,
+				OBJ_254 /* HTTPUtil.swift in Sources */,
+				OBJ_255 /* Router.swift in Sources */,
+				OBJ_256 /* QiscusConnectionDelegate.swift in Sources */,
+				OBJ_257 /* QiscusComment.swift in Sources */,
+				OBJ_258 /* QiscusCore.swift in Sources */,
+				OBJ_259 /* QiscusEventManager.swift in Sources */,
+				OBJ_260 /* QiscusRoom.swift in Sources */,
+				OBJ_261 /* QiscusWorkerManager.swift in Sources */,
+				OBJ_262 /* RealtimeManager.swift in Sources */,
+				OBJ_263 /* ConfigManager.swift in Sources */,
+				OBJ_264 /* QiscusFileManager.swift in Sources */,
+				OBJ_265 /* QiscusStorage.swift in Sources */,
+				OBJ_266 /* Data+Json.swift in Sources */,
+				OBJ_267 /* QiscusHeartBeat.swift in Sources */,
+				OBJ_268 /* QiscusLogger.swift in Sources */,
+				OBJ_269 /* QiscusReachability.swift in Sources */,
+				OBJ_270 /* QiscusSyncEventInterval.swift in Sources */,
+				OBJ_271 /* QiscusThread.swift in Sources */,
+				OBJ_272 /* QiscusWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_289 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_294 /* QDate.swift in Sources */,
+				OBJ_295 /* Model.swift in Sources */,
+				OBJ_296 /* Protocol.swift in Sources */,
+				OBJ_297 /* QRLogger.swift in Sources */,
+				OBJ_298 /* QiscusRealtime.swift in Sources */,
+				OBJ_299 /* QiscusRealtimeManager.swift in Sources */,
+				OBJ_300 /* RealtimeConfig.swift in Sources */,
+				OBJ_301 /* MqttClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_312 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_317 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_324 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cocoaasyncsocket::CocoaAsyncSocket" /* CocoaAsyncSocket */;
+			targetProxy = 208EBBD228BC5FC9002DBF9D /* PBXContainerItemProxy */;
+		};
+		OBJ_305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cocoamqtt::CocoaMQTT" /* CocoaMQTT */;
+			targetProxy = 208EBBD128BC5FC9002DBF9D /* PBXContainerItemProxy */;
+		};
+		OBJ_306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cocoaasyncsocket::CocoaAsyncSocket" /* CocoaAsyncSocket */;
+			targetProxy = 208EBBD328BC5FC9002DBF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/CocoaAsyncSocket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CocoaAsyncSocket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CocoaAsyncSocket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/CocoaAsyncSocket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CocoaAsyncSocket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CocoaAsyncSocket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/CocoaMQTT_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CocoaMQTT;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) IS_SWIFT_PACKAGE";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CocoaMQTT;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/CocoaMQTT_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CocoaMQTT;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) IS_SWIFT_PACKAGE";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CocoaMQTT;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/QiscusCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = QiscusCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = QiscusCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/QiscusCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = QiscusCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = QiscusCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/QiscusRealtime_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = QiscusRealtime;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = QiscusRealtime;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CocoaAsyncSocket/Source/GCD",
+					"$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket",
+				);
+				INFOPLIST_FILE = QiscusCore.xcodeproj/QiscusRealtime_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/QiscusCore.xcodeproj/GeneratedModuleMap/CocoaAsyncSocket/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = QiscusRealtime;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = QiscusRealtime;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.6.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = QiscusCore.xcodeproj/SwiftyJSON_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftyJSON;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = QiscusCore.xcodeproj/SwiftyJSON_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftyJSON;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_158 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_159 /* Debug */,
+				OBJ_160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_166 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocketPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_167 /* Debug */,
+				OBJ_168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_172 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_173 /* Debug */,
+				OBJ_174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "QiscusCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_204 /* Build configuration list for PBXNativeTarget "CocoaMQTTPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_205 /* Debug */,
+				OBJ_206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_210 /* Build configuration list for PBXNativeTarget "QiscusCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_211 /* Debug */,
+				OBJ_212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_285 /* Build configuration list for PBXNativeTarget "QiscusCorePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_286 /* Debug */,
+				OBJ_287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_290 /* Build configuration list for PBXNativeTarget "QiscusRealtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_291 /* Debug */,
+				OBJ_292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_308 /* Build configuration list for PBXNativeTarget "QiscusRealtime-iOSPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_309 /* Debug */,
+				OBJ_310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_313 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_314 /* Debug */,
+				OBJ_315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_320 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_321 /* Debug */,
+				OBJ_322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		208EBBD628BC6009002DBF9D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		20D4B75A2948616800E6D475 /* XCRemoteSwiftPackageReference "QiscusRealtime-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qiscus/QiscusRealtime-iOS.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20D4B75B2948616800E6D475 /* QiscusRealtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20D4B75A2948616800E6D475 /* XCRemoteSwiftPackageReference "QiscusRealtime-iOS" */;
+			productName = QiscusRealtime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
